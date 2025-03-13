@@ -4,6 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <!-- lato font family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
      <!-- style CSS -->
     <link rel="stylesheet" href="style.css">
     <title>Landing Page Title</title>
@@ -26,7 +30,7 @@
             <div class="nav-links">
             <ul class="nav-menu-items">
                 <li>
-                    <a href="#">Features</a>
+                    <a href="#" class="active">Features</a>
                 </li>
                 <li>
                     <a href="#">Solutions</a>
@@ -66,8 +70,8 @@
                     <p>We provide sales teams and professionals 
                     with the knowledge, skill and discipline they need to be 10x more successful.</p>
                     <div class="btns-link">
-                        <button><a>Get Started</a></button>
-                        <button>Check Our Video</button>
+                        <button class="btn-tag"><a>Get Started</a></button>
+                        <button class="btn-tag">Check Our Video</button>
                     </div>
                </div>
                <div class="banner-img-right">
@@ -113,7 +117,7 @@
         <div class="container">
             <ul class="items">
                 <li>
-                    <button>Beneficial</button>
+                    <button class="btn-tag">Beneficial</button>
                     <h4>Beneficial Elements</h4>
                     <p>An awesome & poweful tools for your business, increase business revenue</p>
                 </li>
@@ -376,7 +380,73 @@
      </section>
     </main>
      <!-- footer content section -->
-    <footer></footer>
+    <footer>
+        <div class="container">
+            <ul class="footer-items">
+                <li class="item">
+                    <img src="./images/Logo.svg" alt="footer logo">
+                    <div class="social-logo">
+                        <img src="./images/facebook.svg" alt="facebook">
+                        <img src="./images/insta.svg" alt="instagram"> 
+                        <img src="./images/youtube.svg" alt="youtube">
+                    </div>
+                </li>
+                <li class="item">
+                    <p>
+                        An awesome & poweful tools for your business, increase business revenue. 
+                        with evaluating in depth variety of data sets and including the speed of tech
+                        adaptation we can build bridges between any companies and their customers.
+                    </p>
+                </li>
+                <li class="item">
+                    <ul class="footer-menu">
+                        <li>Home</li>
+                        <li>Features</li>
+                        <li>Solutions</li>
+                        <li>Resources</li>
+                        <li>Pricing</li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <ul class="footer-menu">
+                        <li>About Us</li>
+                        <li>Company</li>
+                        <li>Contact</li>
+                        <li>Career</li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <div class="footer-mid">
+                <div class="card">
+                    <h6>This website is developed by trainees at Archi’s Academy</h6>
+                    <div class="sub-content">
+                        <h6>Collaborators</h6>
+                        <ul class="admin">
+                            <li><img src="./images/collab1.png" alt="Collaborators"></li>
+                            <li><img src="./images/collab2.png" alt="Collaborators"></li>
+                            <li><img src="./images/collab3.png" alt="Collaborators"></li>
+                            <li><img src="./images/collab4.png" alt="Collaborators"></li>
+                            <li><img src="./images/collab5.png" alt="Collaborators"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <a href="">©2022-2023 Trustco.</a>
+                <ul>
+                    <li>Term of Service</li>
+                    <li>Privacy Policy</li>
+                </ul>
+                <select name="lang" id="lang">
+                    <option value="English">English</option>
+                    <option value="Hindi">Hindi</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+     <!-- SLIDE SHOW SCRIPT -->
     <script>
         let slideIndex = 1;
 showSlides(slideIndex);
