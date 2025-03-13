@@ -19,6 +19,15 @@ body {
 body{
     font-size: 1rem;
 }
+:root {
+    --primary-color: #043A53;    /* Blue */
+    --secondary-color: #12141D;  /* Dark blue */
+    --background-color:#F2F5F6;  /* Light gray */
+    --text-color: #92A7B0;       /* Dark gray */
+    --head-color: #F0B73F;       /* Yellow */
+    --light-color: #fff;         /* white */
+    --dark-color: #000;       /* blck */
+  }
 
 label,ul,ol,p,a,
 h1,h2,h3,h4,h5,h6 {
@@ -45,6 +54,17 @@ h5{
     font-weight: 700;
 
 }
+P{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 400;
+
+}
+a{
+    font-size: 1rem;
+    line-height: 100%;
+    font-weight: 700;
+}
 
 img {
     display: block;
@@ -52,7 +72,7 @@ img {
     height: auto;
 }
 .btn-tag {
-    padding: 10px 20px;
+    padding: 0.625rem;
     border-radius: 40px;
     transition: all 0.3s;
     text-decoration: none;
@@ -62,15 +82,25 @@ img {
     font-size: 16px;
     line-height: 20px;
     font-weight: 600;
+    min-width: 5.75rem;
   }
   .btn-tag > a{
     color: inherit;
     text-decoration: none;
   }
+  .btn-primary{
+    background-color:var(--primary-color);
+    color: var(--light-color);
+  }
+  .btn-secondary{
+    background-color:var(--light-color);
+    color: var(--secondary-color);
+    opacity: 0.7;
+  }
 header{
     height: 100px;
-    padding: 20px;
-    background-color: #f2f5f6;
+    padding: 20px 25px;
+    background-color: var( --background-color);
 }
 .nav {
     width: 100%;
@@ -80,13 +110,34 @@ header{
     align-items: center;
     justify-content: space-between;
   }
+  .nav ul li > a{
+    color: var(--secondary-color);
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  .nav ul li > a.active{
+    color: var(--primary-color);
+    opacity: 0.7;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  .nav ul li > a:hover,
+  .nav ul li > a:active{
+    color: var(--primary-color);
+    opacity: 0.7;
+  }
   .nav-logo{
-    width: 40%;
+    width: 20%;
   }
   .nav-menu-items{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    column-gap: 10px;
+  }
+  .nav-links .user-btns{
+    display: flex;
+    align-items: center;
     column-gap: 10px;
   }
   
@@ -111,7 +162,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 80%;
   }
   
   .nav > .nav-links > a {
@@ -129,7 +180,7 @@ header{
     display: none;
   }
   
-  @media (max-width:600px) {
+  @media (max-width:991px) {
     .nav > .nav-btn {
       display: inline-block;
       position: absolute;
@@ -149,7 +200,7 @@ header{
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid var(--dark-color);
     }
     .nav > .nav-links {
       position: absolute;
@@ -199,8 +250,50 @@ header{
   .hero-section .banner{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 5rem 3rem 7rem;
 
+  }
+  .hero-section .banner .main-content{
+    padding: 30px;
+  }
+  @media (max-width:1350px){
+    .hero-section .banner .main-content{
+        padding: 0;
+    }
+  }
+  .hero-section .banner .main-content h1{
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+  }
+  .hero-section .banner .main-content span{
+    color: var(--primary-color);
+  }
+  .hero-section .banner .main-content p{
+    color: var(--secondary-color);
+    opacity: 0.7;
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 30px;
+  }
+  .hero-section .banner .main-content h1{
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+  }
+  .hero-section .banner .main-content .btns-link .btn-primary{ 
+    padding: 10px 20px;
+    position: relative;
+  }
+  .hero-section .banner .main-content .btns-link .btn-secondary{
+    background: transparent;
+  }
+  .hero-section .banner .main-content .btns-link .btn-secondary a{
+    padding-left: 30px;
+  }
+  .hero-section .banner .main-content  span.play-img{ 
+    content: url('./images/Play.svg');
+    position: absolute;
+    height:30px;
   }
   .hero-section .container p{
     max-width: 700px;
@@ -321,7 +414,7 @@ img {vertical-align: middle;}
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+ .dot:hover {
   background-color: #717171;
 }
 
