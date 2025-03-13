@@ -7,13 +7,17 @@
     -moz-text-size-adjust: none;
      text-size-adjust: none;
 }
-
+html{
+    font-size: 16px;
+}
 html,
 body {
-  font-size: 16px;
   scroll-behavior: smooth;
   font-family: "Lato", sans-serif;
   font-style: normal;
+}
+body{
+    font-size: 1rem;
 }
 
 label,ul,ol,p,a,
@@ -24,6 +28,22 @@ h1,h2,h3,h4,h5,h6 {
 
 ul li {
   list-style: none;
+}
+h1{
+    font-size: 4rem;
+    line-height: 2.5rem;
+    font-weight: 800;
+}
+h2{
+    font-size: 3.75rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+}
+h5{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+
 }
 
 img {
