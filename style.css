@@ -26,7 +26,8 @@ body{
     --text-color: #92A7B0;       /* Dark gray */
     --head-color: #F0B73F;       /* Yellow */
     --light-color: #fff;         /* white */
-    --dark-color: #000;       /* blck */
+    --dark-color: #000;          /* black */
+    --para-color:#404040;        /* gray */
   }
 
 label,ul,ol,p,a,
@@ -366,32 +367,78 @@ header{
     margin: 0 auto;
    
   }
-.benefit-section{
-    padding: 3rem 3rem ;
-}
-.benefit-section .items{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-.benefit-section .benefit-calc .items-calc{
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-.benefit-section .benefit-founder{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-.building-bridges-section{
-    padding: 3rem 3rem ;
-}
-.building-bridges-section .building-items{
-    display:grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
+
+ /* benefit section style */
+  .benefit-section{
+      padding: 3rem 3rem ;
+  }
+  .benefit-section .items{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+  }
+  .benefit-section .items .btn-primary{
+      height: 45px;
+      padding: 10px 25px;
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-weight: 400;
+
+  }
+  .benefit-section .items li:not(.main-content){
+    width: auto;
+    background-color:var(--background-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    padding: 25px;
+
+  }
+  .benefit-section .items li:first-child{
+    padding:0 35px 25px 0;
+    h2{
+      margin-top: 35px;
+    }
+  }
+  .benefit-section .items h5,
+  .benefit-section .items li:first-child p,
+  .benefit-section .items h2{
+      color: var(--secondary-color);
+  }
+  .benefit-section .items li p{
+    color: var(--para-color);
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 15px;
+  }
+  .benefit-section .items li h5{
+    margin-top: 30px;
+  }
+  .benefit-section .items li:first-child p{
+    font-size: 20px;
+   
+  }
+  .benefit-section .benefit-calc .items-calc{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+  }
+  .benefit-section .benefit-founder{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+  }
+  /* building-bridges section style */
+  .building-bridges-section{
+      padding: 3rem 3rem ;
+  }
+  .building-bridges-section .building-items{
+      display:grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+  }
 
 .we-trust-section{
     padding: 3rem 3rem ;
