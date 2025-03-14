@@ -28,6 +28,7 @@ body{
     --light-color: #fff;         /* white */
     --dark-color: #000;          /* black */
     --para-color:#404040;        /* gray */
+    --text-para-color:#1E1E1E;      /* light black */
   }
 
 label,ul,ol,p,a,
@@ -54,6 +55,11 @@ h5{
     line-height: 2rem;
     font-weight: 700;
 
+}
+h6{
+    font-size: 1.25rem;
+    line-height:1.875rem;
+    font-weight: 700;
 }
 P{
     font-size: 1.125rem;
@@ -84,6 +90,7 @@ img {
     line-height: 20px;
     font-weight: 600;
     min-width: 5.75rem;
+    position: relative;
   }
   .btn-tag > a{
     color: inherit;
@@ -98,6 +105,16 @@ img {
     color: var(--secondary-color);
     opacity: 0.7;
   }
+  .arrow-link{
+    content: url(./images/rightarrow.svg);
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+  }
+
+
+
 header{
     height: 100px;
     padding: 20px 25px;
@@ -420,16 +437,56 @@ header{
     font-size: 20px;
    
   }
+  .benefit-section .benefit-calc{
+    text-align: center;
+    padding: 100px 10px;
+  }
   .benefit-section .benefit-calc .items-calc{
       display:grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 10px;
   }
+  .benefit-section .benefit-calc .items-calc h2{
+    color: var(--primary-color);
+  }
+  .benefit-section .benefit-calc .items-calc p{
+    color: var(--text-para-color);
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
   .benefit-section .benefit-founder{
       display:grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 10px;
+      padding: 15px;
   }
+  .benefit-section .benefit-founder p{
+    font-size: 24px;
+    line-height: 32px;
+    margin: 30px 0;
+  }
+  .benefit-section .benefit-founder p,
+  .benefit-section .benefit-founder h6,
+  .benefit-section .benefit-founder h2{
+    color: var(--secondary-color);
+  }
+  
+  .benefit-section .benefit-founder label{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--para-color);
+  }
+  .benefit-section .benefit-founder .btn-primary{
+    display: block;
+    margin-top: 60px;
+    padding: 10px 60px 10px 25px;
+  }
+
+
+
   /* building-bridges section style */
   .building-bridges-section{
       padding: 3rem 3rem ;
@@ -437,7 +494,25 @@ header{
   .building-bridges-section .building-items{
       display:grid;
       grid-template-columns: repeat(2, 1fr);
+      align-items: center;
       gap: 10px;
+  }
+  .building-bridges-section .building-items .btn-primary{
+    display: block;
+    margin-top: 30px;
+    padding: 10px 60px 10px 25px;
+  }
+  .building-bridges-section .building-items h2{
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+  }
+  .building-bridges-section .building-items span{
+    color: var(--text-color);
+  }
+  .building-bridges-section .building-items p{
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--secondary-color);
   }
 
 .we-trust-section{
