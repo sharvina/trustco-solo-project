@@ -287,42 +287,84 @@ header{
   .hero-section .banner .main-content .btns-link .btn-secondary{
     background: transparent;
   }
-  .hero-section .banner .main-content .btns-link .btn-secondary a{
-    padding-left: 30px;
+  .hero-section .banner .main-content .btns-link  a{
+    font-size: 18px;
   }
-  .hero-section .banner .main-content  span.play-img{ 
-    content: url('./images/Play.svg');
-    position: absolute;
-    height:30px;
+  .hero-section .banner .main-content  a.play-img{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    color: var(--primary-color);
+    font-size: 18px;
+    
+  }
+  .hero-section .banner .main-content  .btns-link{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
   }
   .hero-section .container p{
     max-width: 700px;
     text-align: center;
     margin: 0 auto;
   }
-  .hero-section .hero-footer{
+  .brand-section {
+    background-color: var(--light-color);
+  }
+  .brand-section  ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 10px;
   }
-  .brand-section {
+  .brand-section ul li{
+    color: var(--dark-color);
+    font-weight: 500;
+
+  }
+
+  .video-section {
     background-color: #043A53;
     padding: 3rem 3rem 0;
   }
 
-  .brand-section .brand-head {
-    display: flex;
+  .video-section .video-head {
+    display: flex ;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 40px;
   }
-  .brand-section .brand-video{
+  .video-section .video-head label h2:first-child{
+    color: var(--light-color);
+  }
+  .video-section .video-head label h2:nth-child(2){
+    color: var(--head-color);
+    white-space: nowrap
+  }
+
+  .video-section .video-head p{
+    max-width: 430px;
+    color: var(--light-color);
+
+  }
+  .video-section .video-content{
+    padding: 65px 10px 0;
+  }
+  .video-section .brand-video{
     background-image: url('./images/Video.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-    height:300px;
+    height:580px;
     width: 1130px;
     transition: all .4s ease;
+    text-align: center;
+    margin: 0 auto;
+   
   }
 .benefit-section{
     padding: 3rem 3rem ;
