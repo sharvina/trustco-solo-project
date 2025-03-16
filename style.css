@@ -127,7 +127,7 @@ img {
 .btn-tag {
   padding: 0.625rem;
   border-radius: 2.5rem;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   text-decoration: none;
   width: auto;
   height: 3.125rem;
@@ -157,6 +157,7 @@ img {
 .btn-primary:hover{
   background-color: var(--light-color);
   color: var(--primary-color);
+  transform: scale(1.1);
 }
 
 .btn-secondary {
@@ -170,6 +171,7 @@ img {
   background-color: var(--secondary-color);
   color: var(--light-color);
   opacity: 0.7;
+  transform: scale(1.1);
 }
 
 .arrow-link {
