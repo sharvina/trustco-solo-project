@@ -123,15 +123,6 @@ img {
   padding:0 9.375rem;
 }
 
-@media (min-width:1920px) {
-  .wrapper {
-    width: 100%;
-    padding-right: 0.9375rem;
-    padding-left: 0.9375rem;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
 
 .btn-tag {
   padding: 0.625rem;
@@ -195,6 +186,28 @@ img {
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+}
+
+@media (max-width:1200px){
+  h1{
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+  }
+  P {
+    font-size: 0.875rem;
+  }
+  .wrapper {
+    padding:2.5rem 1.25rem !important;
+  }
+  @media (min-width:1920px) {
+    .wrapper {
+      width: 100%;
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
 }
 
 /* global style : end */
@@ -364,11 +377,7 @@ header {
   margin: 0 auto;
   padding:11.25rem 7.5rem;
 }
-@media (max-width:1440px){
-  .hero-section .wrapper{
-    padding:11.25rem 4rem;
-  }
-}
+
 
 .hero-section .banner {
   display: flex;
@@ -381,11 +390,6 @@ header {
   padding: 1.875rem;
 }
 
-@media (max-width:1350px) {
-  .hero-section .banner .main-content {
-    padding: 0;
-  }
-}
 
 .hero-section .banner .main-content h1 {
   color: var(--secondary-color);
@@ -412,6 +416,7 @@ header {
 .hero-section .banner .main-content .btns-link .btn-primary {
   padding: 0.625rem 1.25rem;
   position: relative;
+  box-shadow: rgb(40 62 71 / 0.25) 0px 25px 25px -5px, rgb(0 0 0 / 0.13) 0px 10px 10px -5px;
 }
 
 .hero-section .banner .main-content .btns-link .btn-secondary {
@@ -445,6 +450,48 @@ header {
   margin: 0 auto;
 }
 
+@media (max-width:1440px) {
+  .hero-section .banner .main-content {
+    padding: 0;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .hero-section .wrapper{
+    padding:11.25rem 4rem;
+  }
+}
+@media (max-width:1200px){
+  .hero-section .banner .main-content h1 {
+    margin-bottom: 0;
+  }
+  .hero-section .banner {
+    flex-wrap: wrap;
+  
+  }
+  .hero-section .banner .main-content{
+    flex: 1 1 100%;
+    order: 1;
+    padding-bottom: 3.75rem;
+  }
+  .hero-section .banner .banner-img-left{
+    flex: 1 1 45%;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .hero-section .banner .banner-img-right{
+    flex: 1 1 45%;
+    order: 2;
+    display: flex
+  }
+  .hero-section .banner .main-content p{
+    padding-top: 0.9375rem;
+  }
+  .hero-section .banner .main-content .btns-link{
+    flex-direction: column;
+  }
+}
+
 /* hero section style : end */
 
 /* brand section style : start */
@@ -462,17 +509,51 @@ header {
   padding: 3.125rem 0.625rem;
 }
 
+
+.brand-section ul li {
+  color: var(--dark-color);
+  font-weight: 500;
+
+}
 @media (min-width:1920px) {
   .brand-section ul {
     max-width: 100%;
     width: 100%;
   }
 }
-
-.brand-section ul li {
-  color: var(--dark-color);
-  font-weight: 500;
-
+@media (max-width:1200px) {
+  .brand-section ul {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .brand-section ul li:nth-child(1){
+    flex: 1 1 100%;
+    order: 1;
+  }
+  .brand-section ul li{
+    font-size: 0.75rem;
+  }
+  .brand-section ul li:nth-child(2),
+  .brand-section ul li:nth-child(3),
+  .brand-section ul li:nth-child(4){
+    flex: 1 1 25%;
+    order: 2;
+    display: flex;
+    justify-content: center;
+  }
+  .brand-section ul li:nth-child(5),
+  .brand-section ul li:nth-child(6)
+  {
+    flex: 1 1 25%;
+    order: 3;
+    display: flex;
+  }
+  .brand-section ul li:nth-child(5){
+    justify-content: flex-end;
+  }
+  .brand-section ul li:nth-child(6){
+    justify-content: flex-start;
+  }
 }
 
 /* brand section style : end */
