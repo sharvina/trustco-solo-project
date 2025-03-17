@@ -830,6 +830,23 @@ header {
   margin-top: 3.75rem;
   padding: 0.625rem 3.75rem 0.625rem 1.5625rem;
 }
+@media (max-width:1200px){
+  .benefit-section{
+    padding: 3.125rem 0;
+  }
+  .benefit-section .items {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .benefit-section .items li:first-child{
+    text-align: center;
+  }
+  .benefit-section .items li:first-child{
+    padding: 0 0 1.5625rem 0;
+  }
+  .benefit-section .items .btn-primary{
+    margin: 0 auto;
+  }
+}
 
 /* benefit section style  : end */
 
