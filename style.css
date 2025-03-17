@@ -653,13 +653,26 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  height: 36.25rem;
+  height: 32.25rem;
   width: auto;
   transition: all .4s ease;
   text-align: center;
   margin: 0 auto;
   cursor: pointer;
+  position: relative;
 
+}
+.video-section  .play-btn::after{
+  content: url('./images/play-icon.svg');
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px; 
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /* video section style : end */
