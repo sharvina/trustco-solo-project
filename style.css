@@ -48,6 +48,7 @@ body {
   /*gary*/
   --link-colr: #6439FF;
   /*light blue*/
+  --circle-color:#2d566b;
 }
 
 /* global style : start */
@@ -80,6 +81,11 @@ h1 {
 h2 {
   font-size: 3.75rem;
   line-height: 4.5rem;
+  font-weight: 700;
+}
+h3{
+  font-size: 3rem;
+  line-height: 3.75rem;
   font-weight: 700;
 }
 
@@ -855,18 +861,89 @@ header {
 /* building-bridges section style : start */
 .building-bridges-section .wrapper{
  padding-left: 0;
+ margin: 0;
+ max-width: 100%;
+ padding-bottom: 0 !important;
 }
 
 .building-bridges-section .items-right{
   padding-bottom:8.125rem ;
+  padding-left: 9.375rem;
 }
 
 .building-bridges-section .building-items {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
-  gap: 0.625rem;
+  gap: 0.625rem; */
+  display: flex;
+  align-items: center;
+
 }
+.building-bridges-section .building-items li:first-child,
+.building-bridges-section .building-items li:last-child{
+  flex: 1;
+}
+.building-bridges-section .building-items .items-left{
+  position: relative;
+}
+.building-bridges-section .building-items .shape{
+  height: 14.375rem;
+  width: 14.375rem;
+  border-radius: 50%;
+  border: 6px solid var(--light-color);
+  background-color: var(--primary-color);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  text-align: center;
+  top: 65%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  box-shadow: rgb(7 56 81 / 19%) 0px 54px 55px, rgb(7 56 81 / 5%) 0px -12px 30px,
+   rgb(7 56 81 / 0%) 0px 4px 6px, rgb(7 56 81 / 32%) 0px 12px 13px, rgb(7 56 81 / 0%) 0px -3px 5px;;
+}
+
+.building-bridges-section .building-items .shape .circle{
+  height: 3.75rem;
+  width:  3.75rem;
+  border-radius: 100%;
+  background-color:var(--circle-color);
+  position: relative;
+
+}
+.building-bridges-section .building-items .shape  h3{
+  color: var(--light-color);
+  padding-top:1rem;
+}
+.building-bridges-section .building-items .shape  p{
+  font-size: 1rem;
+  line-height:1.5rem ;
+  color: var(--light-color);
+}
+.diamond{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color:var(--light-color); /* Color of the diamond */
+  clip-path: polygon(51% 100%, 100% 37%, 86% 0, 15% 0, 0% 38%);
+  display: block;
+  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+   }
+   .diamond-inner{
+    width: 2rem;
+    height:2.1875rem;
+    background-color:var(--primary-color);
+   }
+
+ 
 
 .building-bridges-section .building-items .btn-primary {
   display: block;
@@ -888,6 +965,7 @@ header {
   line-height: 1.875rem;
   color: var(--secondary-color);
 }
+
 
 /* building-bridges section style :end */
 
