@@ -73,7 +73,7 @@ ul li {
 
 h1 {
   font-size: 4rem;
-  line-height: 2.5rem;
+  line-height:100%;
   font-weight: 800;
 }
 
@@ -160,11 +160,24 @@ img {
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--light-color);
+  border: 1px solid var(--primary-color);
+}
+.btn-primary:active,
+.btn-primary:hover{
+  background-color: var(--light-color);
+  color: var(--primary-color);
 }
 
 .btn-secondary {
   background-color: var(--light-color);
   color: var(--secondary-color);
+  opacity: 0.7;
+  border: 1px solid var(--light-color);
+}
+.btn-secondary:active,
+.btn-secondary:hover{
+  background-color: var(--secondary-color);
+  color: var(--light-color);
   opacity: 0.7;
 }
 
@@ -350,6 +363,11 @@ header {
   text-align: center;
   margin: 0 auto;
   padding:11.25rem 7.5rem;
+}
+@media (max-width:1440px){
+  .hero-section .wrapper{
+    padding:11.25rem 4rem;
+  }
 }
 
 .hero-section .banner {
@@ -651,7 +669,7 @@ header {
 .building-bridges-section .building-items .btn-primary {
   display: block;
   margin-top: 1.875rem;
-  padding: 0.625rem 3.75rem 0.625rem 1.5625;
+  padding: 0.625rem 3.75rem 0.625rem 1.5625rem;
 }
 
 .building-bridges-section .building-items h2 {
