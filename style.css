@@ -209,7 +209,8 @@ img {
     font-weight: 700;
   }
   P {
-    font-size: 0.875rem;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
   }
   .wrapper {
     padding:2.5rem 1.25rem !important;
@@ -872,10 +873,6 @@ header {
 }
 
 .building-bridges-section .building-items {
-  /* display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-items: center;
-  gap: 0.625rem; */
   display: flex;
   align-items: center;
 
@@ -912,9 +909,10 @@ header {
   width:  3.75rem;
   border-radius: 100%;
   background-color:var(--circle-color);
-  position: relative;
+
 
 }
+
 .building-bridges-section .building-items .shape  h3{
   color: var(--light-color);
   padding-top:1rem;
@@ -968,6 +966,46 @@ header {
   font-size: 1.25rem;
   line-height: 1.875rem;
   color: var(--secondary-color);
+}
+@media (max-width:1200px){
+  .building-bridges-section .building-items{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .building-bridges-section .building-items .items-right{
+    padding: 10px;
+  }
+  .building-bridges-section .building-items .btn-primary{
+    margin: 0 auto;
+  }
+  .building-bridges-section .building-items h2{
+    margin-bottom: 1rem;
+  }
+  .building-bridges-section .building-items .items-right p{
+    margin :1rem 0;
+  }
+  .building-bridges-section .building-items .items-left{
+    margin-left: -22px;
+    padding: 32px 50px 0 0;
+  }
+  .building-bridges-section .building-items .shape{
+    height: 11.375rem;
+    width: 11.375rem;
+    top: 75%;
+    left: 75%;
+  }
+  .building-bridges-section .building-items .shape h3{
+    font-size: 2.25rem;
+    padding-top: 4rem;
+  }
+  .building-bridges-section .building-items .shape p{
+    font-size: 0.875rem;
+  }
+  .building-bridges-section .building-items .shape .circle{
+    position: absolute;
+    top: 10%;
+  }
+  
 }
 
 
