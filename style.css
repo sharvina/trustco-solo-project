@@ -837,6 +837,9 @@ header {
   margin-top: 3.75rem;
   padding: 0.625rem 3.75rem 0.625rem 1.5625rem;
 }
+.benefit-section .benefit-calc .items-calc p{
+  color: var(--para-color);
+}
 @media (max-width:1200px){
   .benefit-section{
     padding: 3.125rem 0;
@@ -853,6 +856,13 @@ header {
   .benefit-section .items .btn-primary{
     margin: 0 auto;
   }
+  .benefit-section .benefit-calc .items-calc{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .benefit-section .benefit-calc{
+    padding: 3.124rem 0.625rem;
+  }
+  
 }
 
 /* benefit section style  : end */
