@@ -1364,15 +1364,17 @@ header {
 }
 
 .cta-banner-section .cta-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.25rem;
+
+  background-image: url('./images/Decorations.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .cta-banner-section h2 {
   color: var(--light-color);
   padding-bottom: 3.125rem;
+  max-width: 670px;
 }
 
 .cta-banner-section .btn-get {
