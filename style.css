@@ -930,6 +930,9 @@ header {
 .building-bridges-section .building-items li:last-child{
   flex: 1;
 }
+.building-bridges-section .building-items li:first-child img{
+  width: 100%;
+}
 .building-bridges-section .building-items .items-left{
   position: relative;
 }
@@ -1077,7 +1080,6 @@ header {
 }
 
 .slideshow-container {
-  /* max-width: 71.25rem; */
   position: relative;
   margin: auto;
 }
@@ -1376,9 +1378,7 @@ header {
 /* cta-banner section style : end */
 
 /* footer section style : start */
-footer {
-  
-}
+
 
 footer .footer-items {
   display: flex;
