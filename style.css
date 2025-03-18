@@ -846,7 +846,10 @@ header {
 }
 @media (max-width:1200px){
   .benefit-section{
-    padding: 3.125rem 0;
+    padding: 3.125rem 0 0;
+  }
+  .benefit-section .wrapper{
+    padding:2.5rem 1.25rem 0 !important;;
   }
   .benefit-section .items {
     grid-template-columns: repeat(1, 1fr);
@@ -865,6 +868,37 @@ header {
   }
   .benefit-section .benefit-calc{
     padding: 3.124rem 0.625rem;
+  }
+  .benefit-section .benefit-founder{
+    grid-template-columns: repeat(1, 1fr);
+  
+  }
+  .benefit-section .benefit-founder .item-right{
+    margin: 0 auto;
+  }
+  .benefit-section .benefit-founder .item-left{
+   margin: 0 auto;
+   text-align: center;
+  }
+  .benefit-section .benefit-founder .item-left p,
+  .benefit-section .benefit-founder .item-left h6{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .benefit-section .benefit-founder .item-left p{
+    margin: 1rem 0;
+  }
+  .benefit-section .benefit-founder .item-left label{
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+  }
+  .benefit-section .benefit-founder{
+    padding: 0;
+  }
+  .benefit-section .benefit-founder .item-left .btn-primary {
+    margin-top: 2rem !important;
+    margin: 0 auto;
+    font-size: 0.75rem;
   }
   
   
