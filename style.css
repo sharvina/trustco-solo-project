@@ -859,7 +859,10 @@ header {
   .benefit-section .benefit-calc .items-calc{
     grid-template-columns: repeat(2, 1fr);
   }
-
+  .benefit-section .benefit-calc{
+    padding: 3.124rem 0.625rem;
+  }
+  
 }
 
 /* benefit section style  : end */
