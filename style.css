@@ -510,11 +510,13 @@ header {
 }
 
 
-.brand-section ul li {
+.brand-section ul li h6{
   color: var(--dark-color);
   font-weight: 500;
+  font-size: 1rem;
 
 }
+
 @media (min-width:1920px) {
   .brand-section ul {
     max-width: 100%;
@@ -530,7 +532,7 @@ header {
     flex: 1 1 100%;
     order: 1;
   }
-  .brand-section ul li{
+  .brand-section ul li h6{
     font-size: 0.75rem;
   }
   .brand-section ul li:nth-child(2),
