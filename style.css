@@ -1353,7 +1353,13 @@ header {
   .blog-section .blog-body {
     grid-template-columns: repeat(2, 1fr);
   }
+ 
 
+}
+@media only screen and (max-width:1200px){
+  .blog-section .blog-head{
+    flex-direction: column;
+  }
 }
 
 /* blog section style : end */
