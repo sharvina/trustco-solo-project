@@ -408,9 +408,6 @@
                                 class="arrow-link"></a></button>
                         <p>No credit card required</p>
                     </div>
-                    <!-- <div class="right-content">
-                        <img src="./images/Decorations.png" alt="Decoration">
-                    </div> -->
                 </div>
             </div>
         </section>
@@ -471,7 +468,7 @@
         </div>
         <div class="wrapper-footer">
             <div class="footer-bottom">
-                <a href="">©2022-2023 Trustco.</a>
+                <a href="">&copy; <span id="year-range"></span> Trustco.</a>
                 <ul>
                     <li>Term of Service</li>
                     <li>Privacy Policy</li>
@@ -516,6 +513,16 @@
             slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
+    </script>
+      <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+        
+        // Get the next year
+        const nextYear = currentYear + 1;
+
+        // Display the range (e.g., "2025 to 2026")
+        document.getElementById('year-range').textContent = `${currentYear} - ${nextYear}`;
     </script>
 </body>
 
