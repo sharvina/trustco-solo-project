@@ -1393,6 +1393,24 @@ header {
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
+@media only screen and (max-width:575px){
+  .cta-banner-section .cta-content{
+    background-position: bottom;
+  }
+  .cta-banner-section .cta-content .left-content{
+    text-align: center;
+    padding-bottom: 120px;
+  }
+  .cta-banner-section .wrapper{
+    padding: 2.5rem 1.25rem 0 !important;
+  }
+  .cta-banner-section .btn-get{
+    margin: 0 auto;
+  }
+  .cta-banner-section .left-content h2{
+    padding: 0.625rem 0 1.5rem;
+  }
+}
 
 /* cta-banner section style : end */
 
