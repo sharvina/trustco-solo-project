@@ -1843,4 +1843,39 @@ footer .footer-bottom .select-container::before {
   justify-self: end;
   padding: 1rem 3.125rem;
 }
+@media only screen and (max-width:1200px){
+  .contact-card-section{
+    padding: 0;
+  }
+  .contact-card-section .bottom-content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+ 
+  .contact-card-section .bottom-content .card{  
+    padding: 0.75rem;
+  }
+  .contact-form-section{
+    padding: 2.5rem 0;
+
+  }
+  .contact-form-section .contact-form{
+    padding: 0;
+  }
+  .contact-form-section .wrapper{
+    padding: 0 1.25rem  !important;
+  }
+  .contact-form-section .contact-form-container .field-container{
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+  .contact-form-section .contact-form-container .contact-form .btn-primary{
+    width:100%;
+    justify-self: center;
+  }
+  .contact-form-section .contact-form-container .input-group p{
+    padding: 0;
+  }
+
+  
+}
 /* contact form section style: end */
