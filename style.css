@@ -49,6 +49,8 @@ body {
   --link-colr: #6439FF;
   /*light blue*/
   --circle-color:#2d566b;
+  --orenge-color:#FCF3E0; 
+  --border1-color:#91A7B0;
 }
 
 /* global style : start */
@@ -113,6 +115,7 @@ a {
   font-size: 1rem;
   line-height: 100%;
   font-weight: 700;
+  text-decoration: none;
 }
 
 img {
@@ -1666,3 +1669,178 @@ footer .footer-bottom .select-container::before {
 
 
 /* footer section style : end */
+
+
+/* contact card section style: start */
+.contact-card-section{
+  background-color: var(--background-color);
+  padding: 5.9375rem 0;
+}
+.contact-card-section .top-content{
+  margin: 0 auto;
+  text-align: center;
+}
+.contact-card-section .top-content p{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  color: var(--secondary-color);
+}
+.contact-card-section .bottom-content{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0 0;
+
+}
+.contact-card-section .bottom-content .card{
+  background-color: var(--light-color);
+  padding: 1.5rem;
+  box-shadow: none;
+}
+.contact-card-section .bottom-content .card .sub-card-top{
+  padding:1.25rem;
+  border-radius: 50%; 
+  width: 4rem; 
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem   ;
+
+}
+.contact-card-section .bottom-content .card:nth-child(1) .sub-card-top{
+  background-color:var(--background-color);
+}
+.contact-card-section .bottom-content .card:nth-child(2) .sub-card-top{
+  background-color:var(--orenge-color);
+}
+.contact-card-section .bottom-content .card:nth-child(3) .sub-card-top{
+  background-color:var(--background-color);
+}
+.contact-card-section .bottom-content .card .sub-card-mid h6{
+  color: var(--secondary-color);
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.contact-card-section .bottom-content .card .sub-card-mid p{
+  color: var(--para-color);
+  padding: 1rem 0 3.75rem;
+}
+.contact-card-section .bottom-content .card .sub-card-bottom a{
+  position: relative;
+  padding: 0 2rem 0 0;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+.contact-card-section .bottom-content .card .sub-card-bottom img{
+  position: absolute;
+  right: 0px;
+  top: 0;
+}
+
+/* contact card section style: end */
+
+/* contact form section style: start */
+.contact-form-section {
+  padding: 6.25rem 0;
+}
+.contact-form-section .contact-form-container h2{
+  max-width: 0 auto;
+  text-align: center;
+  color: var(--secondary-color);
+}
+.contact-form-section .contact-form-container p{
+  color: var(--secondary-color);
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+.contact-form-section .contact-form{
+  padding: 0 5.3125rem;
+}
+.contact-form-section .contact-form-container .field-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.contact-form-section .contact-form .input-group{
+  padding-bottom: 2rem;
+  position: relative;
+}
+.contact-form-section .contact-form .input-group img{
+  position: absolute;
+  left:0.625rem;
+  top: 34%;
+  transform: translateY(-50%); 
+}
+.contact-form-section .contact-form .input-group input,
+.contact-form-section .contact-form .input-group textarea {
+    width: 100%;
+    height: 3.75rem;
+    padding: 0.75rem 0.75rem 0.75rem 4rem;
+    font-size: 1rem;
+    border: 1px solid var(--border1-color);
+    border-radius: 10px;
+}
+
+.contact-form-section .contact-form .input-group textarea{
+    padding: 0.75rem;
+}
+.contact-form-section .contact-form textarea::placeholder,
+.contact-form-section .contact-form input::placeholder{
+  color:var(--border1-color) ;
+  font-family: "Lato", sans-serif;
+}
+
+.contact-form-section .contact-form .input-group textarea{
+  height: auto;
+}
+
+
+.contact-form-section .contact-form .input-group textarea:focus,
+.contact-form-section .contact-form .input-group input:focus {
+  border-color:var(--primary-color);
+  outline: none; 
+}
+.contact-form-section .contact-form .input-group label{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+.contact-form-section .contact-form  input[type="checkbox"] {
+  width:2em; 
+  height: 2rem; 
+  appearance: none; 
+  border-radius: 50%; 
+  background-color: var(--background-color);
+  position: relative; 
+  cursor: pointer; 
+  padding: 0;
+  border: none;
+}
+.contact-form-section .contact-form input[type="checkbox"]:checked::after {
+  content: url('./images/tick.svg'); 
+  position: absolute;
+  left: 4px;
+  top: 3px;
+  background-color: var(--background-color);
+  border-radius: 50%;
+}
+.contact-form-section .contact-form-container .contact-form  p{
+  margin: 0;
+  font-weight: 400;
+  color: var(--secondary-color);
+  opacity: 0.7;
+}
+.contact-form-section .contact-form-container .contact-form  p a{
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.contact-form-section .contact-form-container .contact-form .btn-primary{
+  width: max-content;
+  justify-self: end;
+  padding: 1rem 3.125rem;
+}
+/* contact form section style: end */
